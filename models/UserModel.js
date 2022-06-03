@@ -5,6 +5,7 @@ const schema = new mongoose.Schema({
     name: {type: String, required: true},
     email: String,
     password: Number,
+    createdAt: { type: Date, default: Date.now },
 })
 
 const Model = mongoose.model('UserModel', schema)
